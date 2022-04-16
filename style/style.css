@@ -68,7 +68,11 @@
     .textarea{
         font-size: 15px;
     }
-    
+    .seo-box{
+        position: relative;
+        top: 494px;
+        
+    }
   }
 body{
     margin:0;
@@ -345,12 +349,42 @@ margin-right: 4%;
 
 }
 .seo-box{
-    display: flex;
-    justify-content: space-between;
-    background-size: cover;
+    margin-top: 30px;
 }
+
 #modonad-seo{
     height: 80px;
     width: 300px;
     
 }
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-align: center;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
