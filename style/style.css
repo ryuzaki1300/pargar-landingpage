@@ -74,6 +74,12 @@
         
     }
   }
+  @font-face{
+    font-family: 'FontMan1';
+    src: url('myfont/Vazir.ttf') format('truetype'),
+    url('myfont/Vazir.woff') format('woff'),
+    url('myfont/Vazir.woff2') format('woff2');
+   }
 body{
     margin:0;
     padding:0;
@@ -92,6 +98,8 @@ img {
 .dark-mode {
     background: url(1812965.jpg);
     color: white;
+    background-color: #444;
+   
 }
 #nightModeSwitch{
     background-color: #d7d7d7;
@@ -108,6 +116,7 @@ img {
     background-position: center;
     height: 350px;
     justify-content: space-between;
+    
 }
 .logo-item-bottom{
    
@@ -123,25 +132,41 @@ img {
     display: flex;
     border: 1px solid white ;
     border-radius: 44px;
+    box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
+    backdrop-filter: blur(36px);
+
 }
 .flex-item-top{
     display: flex;
     border: 1px solid white ;
     border-radius: 44px;
+    box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
+    backdrop-filter: blur(36px);
+
 }
 .modonad{
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: rgb(29 28 57);
+    height: 180px;
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); 
     position: relative;
-    box-shadow: 2px 1px 0 3px #0d20e6;
+    box-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     animation-duration: 2s;
     animation-name: bounceIn;
+    backdrop-filter: blur(11px);
+    background-color: #0a0149;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    
+}
+.modonad:hover {
+transform: rotateY(30deg);
+transform: rotateY(-135deg);
+transform: rotateY(360deg);
+    
 }
 .modonad-img{
     position: absolute;
-    top: 68px;
+    top: 58px;
     left: 23px;
     transition:0.4s;
 }
@@ -158,37 +183,37 @@ img {
     padding-left: 11px;
     padding-right: 11px;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IRANSans!important';
     
 }
 .modonad-text{
-    left: 51px;
-    
+    text-align: center;
     transition:0.4s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IRANSans!important';
 }
 .modonad-text:hover{
     transform: scale( 1.3 , 1.3 );
    }
 .chehil-text{
-    left: 66px;
+    text-align: center;
     transition:0.4s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IRANSans!important';
 }
 .chehil-text:hover{
     transform: scale( 1.3 , 1.3 );;
 }
 .pargar-host-text{
     transition:0.4s;
-    left: 28px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'IRANSans!important';
+    text-align: center;
 }
 .pargar-host-text:hover{
     transform: scale( 1.3 , 1.3 );
 }
 .pargar-sms-text{
     transition:0.4s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'IRANSans!important' ;
+    text-align: center;
 }
 .pargar-sms-text:hover{
     transform: scale(1.3 ,1.3);
@@ -358,20 +383,24 @@ margin-right: 4%;
     
 }
 .accordion {
-    background-color: #eee;
-    color: #444;
+    color: rgb(9, 9, 9);
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size:30px;
     transition: 0.4s;
     text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
+    backdrop-filter: blur(11px);
+    
 }
 .active, .accordion:hover {
-    background-color: #ccc;
+    box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
+    backdrop-filter: blur(11px);
 }
 .accordion:after {
     color: #777;
@@ -381,10 +410,20 @@ margin-right: 4%;
 }  
 .panel {
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    direction: rtl;
 }
-
-
+footer{
+    margin-top: 30px;
+    
+}
+.footer-text,samp{
+    background-color: wheat;
+    text-align: center;
+    font-size: 10px;
+}
+.seo-text{
+    backdrop-filter: blur(11px);
+}
