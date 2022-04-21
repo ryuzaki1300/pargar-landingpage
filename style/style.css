@@ -408,12 +408,11 @@ margin-right: 4%;
     float: right;
     margin-left: 5px;
 }  
-.panel {
+#panel {
     padding: 0 18px;
-    max-height: 0;
+    /* max-height: 0; */
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    direction: rtl;
+    /* transition: max-height 0.2s ease-out; */
 }
 footer{
     margin-top: 30px;

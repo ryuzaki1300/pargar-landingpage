@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -111,36 +111,15 @@
                 </div>    
             </div>
             <div class="seo-box form-switch m-2">
-                <p class="accordion" onclick="panel">.ماموریت پرگار نو ایجاد آینده ایی بهتر به کمک فناوری می باشد <br><i class="far fa-angle-double-down"></i></p>
-                 <div class="panel" >
+                <a href="#panel" class="accordion" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">.ماموریت پرگار نو ایجاد آینده ایی بهتر به کمک فناوری می باشد <br><i class="far fa-angle-double-down"></i></a>
+                 <div id="panel" class="collapse" aria-expanded="false" aria-controls="collapseExample">
                     <p class="seo-text">ایده اولیه شرکت پرگار در سال 83 شکل گرفت و کار خودش را در زمینه اسمبل و تعمیرات کامپیوتر ، طراحی وب سایت ، خدمات سامانه های پیامکی و باشگاه مشتریان با نام دفتر فنی پرگار شروع کرد ، در سال 86 واحد امنیت و دوربین های مداربسته و شبکه به پرگار اضافه شد.در سال 87 واحد چاپ و تبلیغات پرگار گرافیک شروع به کار کرد و در همان سال 87 و شروع خدمات به ارگان های دولتی و شرکت های بزرگ شرکت پرگار نو شمال با شماره ثبت 14411 ثبت گردید و این آغازی بود برای اعضای شرکت پرگار نو تا وارد عرصه ی رقابت در کل کشور شوند .پرگار نو در رودسر ، لاهیجان و رشت دفاتر فعال داشته و مشتریان زیادی در طول این سالهای پر فراز و نشیب داشته است.با سالها تجربه در امر فناوری اطلاعات و ارتباطات و توسعه کسب و کارهای سنتی و آنلاین در استان زیبای گیلان و سراسر کشور عزیزمان ایران ما آماده ایم تا با استفاده از علم و تجربه ایی که این سالها اندوخته ایم کسب و کار مشتریانمان را توسعه دهیم و خدمتی کوچک در پیشرفت کسب و کارهای کشور بزرگمان ایران نماییم.</p>
                 </div>
             </div>         
             <div class="test"></div>
         </div>
     </section>
-    <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-           onclick="document.getElementById('dark-mode').src='body'"
-        }
-        var acc = document.getElementsByClassName("accordion");
-        var i;
 
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-            } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        });
-        }
-    </script>
-</body>
     <footer>
         <div class="container">
             <div class="footer-text">
@@ -148,5 +127,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+           onclick="document.getElementById('dark-mode').src='body'"
+        }
+        // var acc = document.getElementsByClassName("accordion");
+        // var i;
+
+        // for (i = 0; i < acc.length; i++) {
+        // acc[i].addEventListener("click", function() {
+        //     this.classList.toggle("active");
+        //     var panel = this.nextElementSibling;
+        //     if (panel.style.maxHeight) {
+        //     panel.style.maxHeight = null;
+        //     } else {
+        //     panel.style.maxHeight = panel.scrollHeight + "px";
+        //     } 
+        // });
+        // }
+    </script>
+</body>
 
 </html>
