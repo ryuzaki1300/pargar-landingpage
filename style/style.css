@@ -396,7 +396,10 @@ margin-right: 4%;
     border-radius: 30px;
     box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
     backdrop-filter: blur(11px);
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    text-decoration: none;
 }
 .active, .accordion:hover {
     box-shadow: 1px 1px 2px white, 0 0 25px #363636, 0 0 5px white;
