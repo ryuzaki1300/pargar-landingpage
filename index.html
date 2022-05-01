@@ -1,147 +1,87 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/bootstrap.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>pargar</title>
-</head>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title>Pargar</title>
+    </head>
 <body>
     <section>
-        <div class="container">
-            <div class="button-Month-sun">
-                <i id="mah"class="fas fa-sun"></i>
-                <div class="form-check form-switch m-2">
-                    <input onclick="myFunction()" class="form-check-input" type="checkbox" id="nightModeSwitch">
-                    <label class="form-check-label" for="nightModeSwitch"></label>
-                </div>
-                <i  class="fas fa-adjust"></i>
+        <div class="felex-header">
+            <div class="header-title">
+                <p>Best Real Estate<br>Advice for Your Homey</p>
+                <samp>we give you thousand recommendations of Aparment, House also Hotel<br>
+                that can make your life become easier than beofre.Lets serch what you</samp>
             </div>
-            <div class="logo-item-top">
-                <div class="flex-item-top">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                          <a  href="https://madonad.ir/">
-                              <img class="modonad-img" src="img/madonad.png">
-                            </a>
-                        </div>
-                        <p class="modonad-text">مادوناد</p>
-                    </div>
-                </div>
-                <div class="flex-item-top">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                            <a  href="https://pargarhost.ir/"> 
-                             <img class="modonad-img" src="img/pargar-host.png">
-                            </a>
-                        </div>
-                        <p class="pargar-host-text">پرگار هاست</p>
-                    </div>
-                </div>
-                <div class="flex-item-top">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                            <a  href="https://chihil.com/">
-                            <img class="modonad-img" src="img/chehel.png">
-                        </a>
-                        </div>
-                        <p class="chehil-text">چهیل</p>
-                    </div>
-                </div>
-                <div class="flex-item-top">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                             <a  href="https://pargarsms.ir/">
-                            <img class="modonad-img" src="img/Untitled-1.png">
-                        </a>
-                        </div>
-                        <p class="pargar-sms-text">پرگار اس ام اس</p>
-                    </div>
-                </div>   
-            </div>
-            <div class="logo-item-bottom">
-                <div class="flex-item-bottom">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                          <a  href="https://madonad.ir/">
-                              <img class="modonad-img" src="img/madonad.png">
-                            </a>
-                        </div>
-                        <p class="modonad-text">مادوناد</p>
-                    </div>
-                </div>
-                <div class="flex-item-bottom">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                            <a  href="https://pargarhost.ir/"> 
-                             <img class="modonad-img" src="img/pargar-host.png">
-                            </a>
-                        </div>
-                        <p class="pargar-host-text">پرگار هاست</p>
-                    </div>
-                </div>
-                <div class="flex-item-bottom">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                            <a  href="https://chihil.com/">
-                            <img class="modonad-img" src="img/chehel.png">
-                        </a>
-                        </div>
-                        <p class="chehil-text">چهیل</p>
-                    </div>
-                </div>
-                <div class="flex-item-bottom">
-                    <div class="modonad-flex">
-                        <div class="modonad">
-                             <a  href="https://pargarsms.ir/">
-                            <img class="modonad-img" src="img/Untitled-1.png">
-                        </a>
-                        </div>
-                        <p class="pargar-sms-text">پرگار اس ام اس</p>
-                    </div>
-                </div>    
-            </div>
-            <div class="form-center">
-            <form class="form-bottun" action="/" method="post">         
-                <div class="top-row">
-                  <div class="field-wrap"> 
-                    <label>
-                      نام <span class="req">*</span>
-                    </label>
-                    <input type="text" required autocomplete="off" />
-                  </div>        
-                  <div class="field-wrap">
-                    <label>
-                      نام خانوادگی<span class="req">*</span>
-                    </label>
-                    <input type="text"required autocomplete="off"/>
-                  </div>
-                </div>
-                <div class="field-wrap">
-                  <label>
-                    ایمیل<span class="req">*</span>
-                  </label>
-                  <input type="email"required autocomplete="off"/>
-                </div>                  
-                <button type="submit" class="button button-block">ثبت نام</button>          
-                </form>
-            </div>
-        </div>   
+        </div>
+        <div class="header-img ">
+            <img src="img/close-up-man-writing-code-laptop.jpg" alt="">
+        </div>
     </section>
-   
-    <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-           onclick="document.getElementById('dark-mode').src='body'"
-        }
-        
-    </script>
+    <div class="item-felex">
+        <div class="item-box-top">
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+        </div>
+        <div class="item-box-center">
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+        </div>
+        <div class="item-box-bottom">
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+            <div class="box-top-left">
+                <i class="fad fa-camera"></i>
+                <p>Great Ghotos</p>
+                <span> We always make sure give you<br> hte best photos output with High<br> Definiton Picture</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-box">
+            <p>Get aour finance app now</p>
+            <h6>No contact,no set-up costs,just awesome way to orgnise your money.</h6>
+    </div>
 </body>
-
 </html>
